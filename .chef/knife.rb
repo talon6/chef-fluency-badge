@@ -5,5 +5,5 @@ log_level                :info
 log_location             STDOUT
 node_name                "mario"
 client_key               "#{current_dir}/mario.pem"
-chef_server_url          "https://tatical122.mylabserver.com/organizations/linuxacademy"
+chef_server_url          "https://tatical124.mylabserver.com/organizations/linxuacademy"
 cookbook_path            ["#{current_dir}/../cookbooks"]
