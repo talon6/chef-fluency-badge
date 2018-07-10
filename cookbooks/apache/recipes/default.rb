@@ -5,8 +5,8 @@
 # Copyright:: 2018, The Authors, All Rights Reserved.
 
 if node['platform_family'] == "rhel"
-	package = "http"
-elsif node ['platform_family'] == "debian"
+	package = "httpd"
+elsif node['platform_family'] == "debian"
 	package = "apache2"
 end
 
@@ -19,5 +19,3 @@ service 'apache2' do
 	service_name 'httpd'
 	action [:start, :enable]
 end
-
-include_recipe 'apache::websites'
